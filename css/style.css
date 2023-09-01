@@ -14,14 +14,14 @@
   --lightblue-header: #1b72e8;
   --darkblue-header: #165bba;
   --blue-link: #217afd;
+  --blue-sidebar: #051e34;
 
   /* height  */
   --height-topbar: 70px;
   --height-nav: 40px;
 
   /* width  */
-  --width-sidebar-sm: 70px;
-  --width-sidebar-lg: 150px;
+  --width-sidebar: 70px;
 
 }
 
@@ -34,19 +34,62 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
-section {
-  border: 1px solid black;
-  background-color: lightcoral;
-}
-
 #topbar {
   height: var(--height-topbar);
 }
 
 #sidebar {
-  width: var(--width-sidebar-sm);
+  width: var(--width-sidebar);
+  height: calc(100vh - var(--height-topbar));
 }
 
-#main {
-  height: var(--height-topbar);
+#dashboard {
+  width: calc(100% - var(--width-sidebar));
+  height: calc(100vh - var(--height-topbar));
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* TOPBAR  */
+
+
+/* SIDEBAR  */
+
+#sidebar {
+  background-color: var(--blue-sidebar);
+  background-image: url("../img/sidebar-bg.png");
+}
+
+/* DASHBOARD  */
+
+#dashboard .top {
+  background-color: var(--lightblue-header);
+  color: var(--white);
+}
+
+#dashboard .main {
+  background-color: var(--white-bg);
+  color: var(--bluegrey-title);
+}
+ 
+
+
+
+
+
+
+
+
+
+
+/* MEDIAQUERY */
+
+@media screen and (min-width:992px) {
+  :root {
+    --width-sidebar: 150px;
+  }
 }
