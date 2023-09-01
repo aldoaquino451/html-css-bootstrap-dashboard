@@ -3,3 +3,26 @@
   border: 1px solid black;
   background-color: lightcoral;
 }
+
+
+.a-container-sm {
+  width: 100px;
+  background-color: lightcyan;
+}
+
+.a-container-lg {
+  width: calc(100% - 100px);
+  background-color: lightgreen;
+}
+
+.a-input {
+  border-left: none;
+}
+
+.a-glass {
+  border: 1px solid;
+}
+
+.hidden {
+  display: none;
+}
