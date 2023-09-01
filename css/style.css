@@ -4,6 +4,25 @@
 
 :root {
 
+  /* color  */
+  --white: #ffffff;
+  --white-bg: #f8f9fa;
+  --grey-bg-search: #e5e5e5;
+  --darkgrey-icons: #5b5858;
+  --white-bg-title: #f7f7f7;
+  --bluegrey-title: #212529;
+  --lightblue-header: #1b72e8;
+  --darkblue-header: #165bba;
+  --blue-link: #217afd;
+
+  /* height  */
+  --height-topbar: 70px;
+  --height-nav: 40px;
+
+  /* width  */
+  --width-sidebar-sm: 70px;
+  --width-sidebar-lg: 150px;
+
 }
 
 
@@ -13,4 +32,21 @@
 
 html {
   font-family: 'Roboto', sans-serif;
+}
+
+section {
+  border: 1px solid black;
+  background-color: lightcoral;
+}
+
+#topbar {
+  height: var(--height-topbar);
+}
+
+#sidebar {
+  width: var(--width-sidebar-sm);
+}
+
+#main {
+  height: var(--height-topbar);
 }
