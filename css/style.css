@@ -15,6 +15,7 @@
   --darkblue-header: #165bba;
   --blue-link: #217afd;
   --blue-sidebar: #051e34;
+  --orange: #ff8f00;
 
   /* height  */
   --height-topbar: 70px;
@@ -36,6 +37,7 @@ html {
 
 #topbar {
   height: var(--height-topbar);
+  background-color: var(--white-bg);
 }
 
 #sidebar {
@@ -53,9 +55,47 @@ a {
   color: white;
 }
 
+.a-container-sm {
+  width: 100px;
+  background-color: lightcyan;
+}
+
+.a-container-lg {
+  width: calc(100% - 100px);
+  background-color: lightgreen;
+}
 
 /* TOPBAR  */
 
+#topbar .container-fluid {
+  background-color: var(--white);
+}
+
+#topbar .container-fluid .logo {
+  height: 40px;
+}
+
+#topbar .container-fluid .logo img:first-child {
+  height: 100%;
+}
+
+#topbar .container-fluid .logo img:last-child {
+  /* height: 70%; */
+  height: 100%;
+  padding: 7px;
+}
+
+#topbar .icons i {
+  color: var(--darkgrey-icons);
+}
+
+#topbar .icons .fa-bell {
+  color: var(--orange);
+}
+
+#topbar .form {
+  width: 100%;
+}
 
 /* SIDEBAR  */
 
@@ -64,12 +104,24 @@ a {
   background-image: url("../img/sidebar-bg.png");
 }
 
-/* DASHBOARD  */
+/* DASHBOARD top */
 
 #dashboard .top {
   background-color: var(--lightblue-header);
   color: var(--white);
 }
+
+#dashboard .top .icon-form {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 4px;
+  line-height: 20px;
+  text-align: center;
+}
+
+
+/* DASHBORAD main  */
 
 #dashboard .main {
   background-color: var(--white-bg);
