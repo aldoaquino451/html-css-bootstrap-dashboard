@@ -116,16 +116,30 @@ header {
   color: var(--white);
 }
 
-#dashboard .top i {
+#dashboard .top .a-icon-plus {
+  display: inline-block;
   width: 40px;
   height: 40px;
-  font-size: 30px;
   border: 1px solid white;
   border-radius: 4px;
   text-align: center;
-  line-height: 31px;
+  line-height: 30px;
+  font-size: 30px;
 }
 
+#dashboard .top .a-icons i {
+  font-size: 10px;
+}
+#dashboard .top .a-icons .fa-plus {
+  background-color: var(--darkblue-header);  
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.a-tr {
+  width: 120px;
+  text-align: center;
+}
 
 
 
@@ -158,11 +172,12 @@ header {
 
 
 
-
 /* MEDIAQUERY */
 
-@media screen and (min-width:992px) {
+@media screen and(min-width:992px) {
+
   :root {
     --width-sidebar: 150px;
   }
+
 }
