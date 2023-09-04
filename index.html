@@ -109,30 +109,115 @@
         <div class="container-fluid">
           <div class="row ">
             
-            <div class="col-12 col-md-4 col-lg-3 offset-lg-1 order-md-2 py-2 d-flex align-items-center">
+            <div class="col-12 col-md-4 col-lg-3 offset-lg-1 order-md-2 d-flex align-items-center py-3">
               <div>
+
                 <span class="pe-3">Nuovo Studente</span>
-                <span class="a-icon-plus"><i class="fa-soliud fa-plus"></i></span>
+                
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <span class="a-icon-plus"><i class="fa-soliud fa-plus"></i></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end a-offcanvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+                  <div class="offcanvas-header">
+
+                    <h5 id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                  </div>
+
+                  <div class="offcanvas-body">
+                    <form class="row g-3">
+
+                      <div class="col-6">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name">
+                      </div>
+
+                      <div class="col-6">
+                        <label for="lastname" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" id="lastname">
+                      </div>
+
+                      <div class="col-6">
+                        <label class="form-label" for="email">Email</label>
+                        <div class="input-group">
+                          <div class="input-group-text">@</div>
+                          <input type="text" class="form-control" id="email" placeholder="E-mail">
+                        </div>
+                      </div>
+
+                      <div class="col-6">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password">
+                      </div>
+
+                      <div class="col-12">
+                        <label for="address" class="form-label">Indirizzo</label>
+                        <input type="text" class="form-control" id="address">
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="city" class="form-label">Città</label>
+                        <input type="text" class="form-control" id="city">
+                      </div>
+
+                      <div class="col-md-4">
+                        <label for="state" class="form-label">Stato</label>
+                        <select id="state" class="form-select">
+                          <option selected>Scegli...</option>
+                          <option>Italia</option>
+                          <option>Germania</option>
+                          <option>Spagna</option>
+                          <option>Olanda</option>
+                          <option>Gran Bretagna</option>
+                        </select>
+                      </div>
+
+                      <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Cap</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">Seleziona per proseguire</label>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Salva</button>
+                        <button type="reset" class="btn btn-secondary">Svuota</button>
+                      </div>
+
+                    </form>
+                  </div>
+
+                </div>
+
               </div>
             </div>
 
-            <div class="col-12 col-md-4 col-lg-6  py-2">
-              <div>
+            <div class="col-12 col-md-4 col-lg-6 py-3">
+              <div class="d-flex gap-2 align-items-center">
                 <h2>Boolean</h2>
-                <span class="badge">Piano Blaze</span>
+                <span class="badge rounded-pill a-badge">Piano Blaze</span>
               </div>
               <div>
-                <span class="badge">3 app</span>
+                <span class="badge rounded-pill a-badge">3 app</span>
                 <span class="a-icons"><i class="fa-solid fa-angles-right"></i></span>
-                <span class="a-icons"><i class="fa-solid fa-plus"></i></span>
-                <span class="badge">boolean mobile app</span>
-                <span>boolean mobile app</span>
-                <span>boolean mobile app</span>
+                <span class="badge rounded-pill a-badge d-lg-none"><i class="fa-solid fa-plus"></i></span>
+                <span class="badge rounded-pill a-badge d-none d-lg-inline-block">boolean mobile app</span>
+                <span class="badge rounded-pill a-badge d-none d-lg-inline-block">boolean mobile app</span>
+                <span class="badge rounded-pill a-badge d-none d-lg-inline-block">boolean mobile app</span>
               </div>
               
             </div>
 
-            <div class="col-12 col-md-4 col-lg-2 d-flex align-items-center py-2">
+            <div class="col-12 col-md-4 col-lg-2 d-flex align-items-center py-3">
               <div>
                 <span class="d-block">Studenti online negli ultimi 30 minuti</span>
                 <span class="d-block fs-3">125</span>

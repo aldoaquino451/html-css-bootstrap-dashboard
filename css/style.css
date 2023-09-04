@@ -127,20 +127,21 @@ header {
   font-size: 30px;
 }
 
+#dashboard .top .a-offcanvas {
+  width: 100%;
+}
+
+#dashboard .top .a-badge {
+  background-color: var(--darkblue-header);
+} 
+
 #dashboard .top .a-icons i {
   font-size: 10px;
 }
 #dashboard .top .a-icons .fa-plus {
-  background-color: var(--darkblue-header);  
   border-radius: 50%;
   padding: 5px;
 }
-
-.a-tr {
-  width: 120px;
-  text-align: center;
-}
-
 
 
 /* DASHBORAD main  */
@@ -167,6 +168,10 @@ header {
   border-radius: 4px;
 } 
 
+#dashboard .table .a-tr {
+  width: 120px;
+  text-align: center;
+}
 
 
 
@@ -174,10 +179,14 @@ header {
 
 /* MEDIAQUERY */
 
-@media screen and(min-width:992px) {
+@media screen and (min-width:992px) {
 
   :root {
     --width-sidebar: 150px;
   }
 
+  #dashboard .top .a-offcanvas {
+    width: 60%;
+    max-width: 800px;
+  }
 }
